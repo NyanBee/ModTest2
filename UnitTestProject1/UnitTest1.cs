@@ -20,7 +20,7 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void TestMethod2()//Add_400_then_Add_1000_EQUAL_1400
+        public void TestMethod2()//Add 400 then Add 1000 EQUAL 1400
         {
             Bank b = new Bank();
             MoneyPrinter_plus mp = new MoneyPrinter_plus();
@@ -32,7 +32,7 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void TestMethod3()//Add_Two_Course
+        public void TestMethod3()//Add Two Course
         {
             Bank b = new Bank();
             MoneyPrinter_plus mp = new MoneyPrinter_plus();
@@ -40,6 +40,18 @@ namespace UnitTestProject1
             some.addMoney("RUB", 400);
             some.addMoney("EUR", 1000);
             Assert.AreEqual(some.getCount(), 2);
+        }
+
+        [TestMethod]
+        public void TestMethod4()//Add then watch the list
+        {
+            Bank b = new Bank();
+            MoneyPrinter_plus mp = new MoneyPrinter_plus();
+            Wallet some = new Wallet(b, mp);
+            some.addMoney("RUB", 400);
+            some.addMoney("EUR", 1000);
+            Assert.AreEqual(some.toString2(), "400 RUB,1000 EUR");
+
         }
     }
 }
