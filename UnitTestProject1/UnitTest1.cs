@@ -18,5 +18,17 @@ namespace UnitTestProject1
             Assert.AreEqual(some.getMoney(lol), 800);
 
         }
+
+        [TestMethod]
+        public void TestMethod2()//Add_400_then_Add_1000_EQUAL_1400
+        {
+            Bank b = new Bank();
+            MoneyPrinter_plus mp = new MoneyPrinter_plus();
+            Wallet some = new Wallet(b, mp);
+            some.addMoney("RUB", 400);
+            some.addMoney("RUB", 1000);
+            Assert.AreEqual(some.getMoney("RUB"), 1400);
+
+        }
     }
 }
