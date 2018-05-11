@@ -9,7 +9,16 @@ namespace TDD.Wallet
 {
     public class Wallet
     {
-      
+        public Hashtable wallet = new Hashtable();
+        Bank bank;
+        public MoneyPrinter printer;
+
+        public Wallet(Bank bank1, MoneyPrinter printer1)
+        {
+            bank = bank1;
+            printer = printer1;
+        }
+
         public void addMoney(string course, int amount)
         {
             if (wallet[course] == null)
