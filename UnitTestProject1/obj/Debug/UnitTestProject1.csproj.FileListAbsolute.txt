@@ -1,0 +1,7 @@
+D:\TDD.Wallet\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\TDD.Wallet\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\TDD.Wallet\UnitTestProject1\bin\Debug\TDD.Wallet.exe
+D:\TDD.Wallet\UnitTestProject1\bin\Debug\TDD.Wallet.pdb
+D:\TDD.Wallet\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\TDD.Wallet\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\TDD.Wallet\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

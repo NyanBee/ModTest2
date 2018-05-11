@@ -12,20 +12,11 @@ namespace TDD.Wallet
         public Hashtable wallet = new Hashtable();
         Bank bank;
         public MoneyPrinter printer;
-        private Bank b;
-        private MoneyPrinter_plus mp;
 
         public Wallet(Bank bank1, MoneyPrinter printer1)
         {
             bank = bank1;
             printer = printer1;
-        }
-
-        public Wallet(Bank b, MoneyPrinter_plus mp)
-        {
-            // TODO: Complete member initialization
-            this.b = b;
-            this.mp = mp;
         }
 
         public void addMoney(string course, int amount)
@@ -83,7 +74,7 @@ namespace TDD.Wallet
             return wallet.Count;
         }
 
-        public string ToStringList()
+        public string toString()
         {
             string str = "";
             ICollection keys = wallet.Keys;
@@ -94,5 +85,23 @@ namespace TDD.Wallet
             str = str.Substring(0, str.Length - 1);
             return str;
         }
-    }
+
+        public int getTotalMoney(string course)
+        {
+            int total = 0;
+            ICollection keys = wallet.Keys;
+            foreach (string s in keys)
+            {
+                if (s == course)
+                {
+                    total = total + (int)wallet[s];
+                }
+                else
+                {
+                    total = total + bank.convert((int)wallet[s], s, course);
+                }
+            }
+            return total;
+        }
+    }   
 }

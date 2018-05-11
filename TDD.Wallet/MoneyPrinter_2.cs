@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TDD.Wallet
 {
-    public class MoneyPrinter_plus
+    public class MoneyPrinter_2 : MoneyPrinter
     {
         public string printed { get; set; }
 
