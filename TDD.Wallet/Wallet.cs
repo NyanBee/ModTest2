@@ -82,5 +82,17 @@ namespace TDD.Wallet
         {
             return wallet.Count;
         }
+
+        public string ToStringList()
+        {
+            string str = "";
+            ICollection keys = wallet.Keys;
+            foreach (string s in keys)
+            {
+                str = str + wallet[s].ToString() + " " + s + ",";
+            }
+            str = str.Substring(0, str.Length - 1);
+            return str;
+        }
     }
 }

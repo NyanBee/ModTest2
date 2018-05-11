@@ -50,7 +50,7 @@ namespace UnitTestProject1
             Wallet some = new Wallet(b, mp);
             some.addMoney("RUB", 400);
             some.addMoney("EUR", 1000);
-            Assert.AreEqual(some.toString2(), "400 RUB,1000 EUR");
+            Assert.AreEqual(some.ToStringList(), "400 RUB,1000 EUR");
 
         }
     }
