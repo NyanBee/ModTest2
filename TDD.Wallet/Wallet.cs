@@ -77,5 +77,10 @@ namespace TDD.Wallet
             }
             else return 0;
         }
+
+        public int getCount()
+        {
+            return wallet.Count;
+        }
     }
 }
