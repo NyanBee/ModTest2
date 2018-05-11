@@ -68,5 +68,14 @@ namespace TDD.Wallet
             }
             printer.print("Remove", course, amount.ToString());
         }
+
+        public int getMoney(string course)
+        {
+            if (wallet[course] != null)
+            {
+                return (int)wallet[course];
+            }
+            else return 0;
+        }
     }
 }
