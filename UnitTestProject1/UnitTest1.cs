@@ -53,5 +53,17 @@ namespace UnitTestProject1
             Assert.AreEqual(some.ToStringList(), "400 RUB,1000 EUR");
 
         }
+
+        [TestMethod]
+        public void TestMethod5()//Converter
+        {
+            Bank_plus b = new Bank_plus();
+            MoneyPrinter_plus mp = new MoneyPrinter_plus();
+            Wallet some = new Wallet(b, mp);
+            some.addMoney("USD", 100);
+            some.addMoney("EUR", 100);
+            int total = b.convert(100, "USD", "RUB");
+            Assert.AreEqual(total, 6000);
+        }
     }
 }
