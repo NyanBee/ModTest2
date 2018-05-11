@@ -1,0 +1,1 @@
+D:\TDD.Wallet\TDD.Wallet\bin\Debug\TDD.Wallet.exe.config
