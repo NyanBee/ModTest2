@@ -11,7 +11,7 @@ namespace TDD.Wallet
     {
         public Hashtable wallet = new Hashtable();
         Bank bank;
-        public MoneyPrinter printer; //не работает метод 1 
+        public MoneyPrinter printer; 
 
         public Wallet(Bank bank1, MoneyPrinter printer1)
         {
