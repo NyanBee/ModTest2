@@ -3,3 +3,9 @@ D:\TDD.Wallet\TDD.Wallet\bin\Debug\TDD.Wallet.exe
 D:\TDD.Wallet\TDD.Wallet\bin\Debug\TDD.Wallet.pdb
 D:\TDD.Wallet\TDD.Wallet\obj\Debug\TDD.Wallet.exe
 D:\TDD.Wallet\TDD.Wallet\obj\Debug\TDD.Wallet.pdb
+D:\ModTest\TDD.Wallet\bin\Debug\TDD.Wallet.exe.config
+D:\ModTest\TDD.Wallet\obj\Debug\TDD.Wallet.exe
+D:\ModTest\TDD.Wallet\obj\Debug\TDD.Wallet.pdb
+D:\ModTest\TDD.Wallet\bin\Debug\TDD.Wallet.exe
+D:\ModTest\TDD.Wallet\bin\Debug\TDD.Wallet.pdb
+D:\ModTest\TDD.Wallet\obj\Debug\TDD.Wallet.csprojResolveAssemblyReference.cache
