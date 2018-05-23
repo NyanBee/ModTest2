@@ -53,7 +53,7 @@ namespace UnitTestProject1
 
         }
         [TestMethod]
-        public void TestMethod5()//Test Converter
+        public void TestMethod5()//Test method Converter 
         {
             Bank_2 str = new Bank_2();
             MoneyPrinter_2 str2 = new MoneyPrinter_2();

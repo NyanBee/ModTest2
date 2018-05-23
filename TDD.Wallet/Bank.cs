@@ -22,7 +22,7 @@ namespace TDD.Wallet
             course.Add("EURRUB", 6000);
         }
 
-        public int convert(int amount, string n1, string n2)
+        public int convert(int amount, string n1, string n2) //convert
         {
             Random a = new Random();
             int rnd = a.Next(80, 120);
